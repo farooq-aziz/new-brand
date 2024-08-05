@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: all 0.3s;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000000;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* ============ scroll bar css ============ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fba900;
+}
+
+/* ============ Media Queries ============ */
+
+@media screen and (max-width: 1099px) {
+  br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  br {
+    display: none;
+  }
+}
